@@ -1,0 +1,251 @@
+@import '../../../scss/vars';
+
+.container {
+    max-width: 400px;
+    padding: 30px;
+    border: 2px solid $backgr_footer; 
+    border-radius: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+    .cardTitle {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px;
+
+        .title {
+            font-family: $font-family;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 150%;
+            font-variant: small-caps;
+            color: $dark_text; 
+            margin-bottom: 20px;
+        }
+
+        .price {
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 96%;
+            color: $dark_text;
+            margin-bottom: 16px;
+
+            span {
+                font-family: $font-family;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 137%;
+                color: #bfc1c8;
+            }
+        }
+
+        .addText {
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            color: $dark_text;
+        }
+    }
+
+    .buttonsContainer {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 49px;
+
+        .buttonForm {
+            background-color: $backgr_footer;
+            width: 100%;
+            border-radius: 14px;
+            height: 60px;
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+            color: $white;
+        }
+
+        .button {
+            width: 100%;
+            border-radius: 14px;
+            height: 60px;
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+            &:hover{
+                background-color: $backgr_footer;
+                color: $white
+            }
+            .buttonForm{
+                &:hover{
+                    cursor: not-allowed;
+                }
+                pointer-events: none;
+            }
+        }
+    }
+
+    .descriptionText {
+        span {
+            font-family: $font-family;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 150%;
+            font-variant: small-caps;
+            color: $dark_text;
+        }
+
+        p {
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 137%;
+            color: #bfc1c8;
+            margin-bottom: 16px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            li {
+                display: flex;
+                gap: 11px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px){
+    .container{
+        max-width: 340px;
+        height: 737px;
+    }
+    .cardTitle{
+        height: 164px;  
+        .title {
+            font-family: $font-family;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 150%;
+            font-variant: small-caps;
+            color: $dark_text; 
+            margin-bottom: 20px;
+        }
+
+        .price {
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 96%;
+            color: $dark_text;
+            margin-bottom: 0px;
+    }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        max-width: 640px;
+        height: 378px;
+        flex-direction: row;
+        border: 2px solid $dark_text;
+        border-radius: 30px;
+        padding: 30px 16px;
+
+        .upperText {
+            width: 279px;
+            margin-right: 49px;
+
+            .cardTitle {
+                .title {
+                    font-size: 20px;
+                    line-height: 150%;
+                }
+
+                .price {
+                    font-weight: 400;
+                    font-size: 40px;
+                    line-height: 96%;
+                }
+
+                .addText {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 150%;
+                }
+            }
+        }
+
+        .buttonsContainer {
+            width: 279px;
+            margin-bottom: 0px;
+        }
+
+        .descriptionText {
+            span {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 150%;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 272px;
+        height: 421px;
+        padding: 30px 16px;
+        flex-direction: row;
+        border: 2px solid $dark_text;
+        border-radius: 30px;
+        
+        .upperText {
+            width: 240px;
+            margin-right: 49px;
+
+            .cardTitle {
+                .title {
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 150%;
+                    font-variant: small-caps;
+                }
+
+                .price {
+                    height: 38px;
+                    font-weight: 400;
+                    font-size: 40px;
+                    line-height: 96%;
+                }
+
+                .addText {
+                    height: 90px;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 150%;
+                }
+            }
+        }
+
+        .buttonsContainer {
+            width: 240px;
+            margin-top: 54px;
+            margin-bottom: 10px;
+        }
+
+        .descriptionText {
+            display: none;
+        }
+    }
+}

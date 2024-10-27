@@ -1,0 +1,56 @@
+@import "../../../scss/vars";
+
+.wrapper {
+    padding: 50px 0;
+    width: 350px;
+    position: absolute;
+    z-index: 3;
+    top: 39%;
+    left: 45%;
+    background-color: $white;
+    border-radius: 10px;
+    box-shadow: 0px 8px 24px -4px rgba(24, 39, 75, 0.2), 0px 6px 12px -6px rgba(24, 39, 75, 0.12);
+
+    @media (max-width: 1170px) {
+        top: 36%
+    }
+
+    @media (max-width: 768px) {
+        left: 25%;
+        top: 42%;
+    }
+
+    @media (max-width: 480px) {
+        width: 255px;
+        position: fixed;
+        left: 10%;
+        top: 40%;
+        padding: 29px 0;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.img {
+    padding: 0 145px;
+
+    @media (max-width: 480px) {
+        padding: 0 98px;
+    }
+}
+
+.text {
+    margin-top: 28px;
+    color: $title;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+
+    @media (max-width: 480px) {
+        font-size: 14px;
+    }
+}

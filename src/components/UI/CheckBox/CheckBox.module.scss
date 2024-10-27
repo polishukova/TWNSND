@@ -1,0 +1,53 @@
+@import '../../../scss/vars';
+
+label {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  gap: 9px;
+}
+
+.labelName {
+  color: $title;
+}
+
+.inputCheckbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.vueCheckbox {
+  width: 19px;
+  height: 19px;
+  border: 1px solid $light_border;
+  background-color: $white;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vueCheckboxRadio {
+  border-radius: 50%;
+}
+
+.vueCheckboxActive {
+  border: 1px solid transparent;
+  background-color: $btn;
+  color: #f6f5f5;
+}
+
+.vueCheckboxRadioActive {
+  border: 1px solid $btn;
+}
+
+.radioChecked {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $btn;
+}

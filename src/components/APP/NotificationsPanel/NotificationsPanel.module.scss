@@ -1,0 +1,132 @@
+@import '../../../scss/vars';
+
+.container {
+  position: absolute;
+  top: 58px;
+  left: -304px;
+  z-index: 1;
+  width: 350px;
+  box-shadow: 0px 6px 12px -6px rgba(24, 39, 75, 0.12), 0px 8px 24px -4px rgba(24, 39, 75, 0.08);
+  background-color: $white;
+  border-radius: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 21px 22px 13px;
+  border-bottom: 0.4px solid $light_border;
+}
+
+.title {
+  color: $title;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.noContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 56px 36px 66px;
+  color: $light_border;
+}
+
+.subtitle {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.description {
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.notificationsContent {
+  max-height: 530px;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $btn;
+    border-radius: 10px;
+  }
+}
+
+.notification {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 22px 10px 42px;
+  cursor: pointer;
+  border-bottom: 0.4px solid $light_border;
+  background-color: $backgr_light_blue;
+  color: $text;
+  font-size: 12px;
+  line-height: 18px;
+
+  &:before {
+    position: absolute;
+    top: 15px;
+    left: 22px;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: $btn;
+    border-radius: 50%;
+  }
+}
+
+.isViewed {
+  background-color: $white;
+}
+
+.date {
+  font-size: 10px;
+  line-height: 18px;
+  color: $light_border;
+}
+
+.reading {
+  padding: 13px;
+  text-align: center;
+  color: $active;
+  font-size: 12px;
+  line-height: 18px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $backgr_light;
+  }
+
+  &:active {
+    border-radius: 0px 0px 10px 10px;
+    border: 1px solid $active;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    left: -264px;
+    width: 310px;
+  }
+
+  .noContent {
+    padding: 56px 16px 40px;
+  }
+}
+
+@media (max-width: 481px) {
+  .container {
+    left: 0;
+    width: calc(100% - 16px * 2);
+    margin-inline: 16px;
+  }
+}

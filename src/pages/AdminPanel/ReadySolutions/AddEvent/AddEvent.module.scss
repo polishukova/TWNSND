@@ -1,0 +1,63 @@
+@import '../../../../scss/vars';
+
+.eventsItem {
+  position: relative;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  min-height: 240px;
+  border-radius: 30px;
+  background: $backgr_light;
+  padding: 20px 25px;
+
+  & .eventsClose {
+    opacity: 0;
+  }
+
+  &:hover {
+    border: 1px solid $bright_border;
+
+    & .eventsClose {
+      opacity: 1;
+    }
+  }
+
+  @media (max-width:800px) {
+    width: 100%;
+  }
+
+  @media(max-width:525px) {
+    min-height: 200px;
+  }
+}
+
+.eventsClose {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.eventsIcon {
+  width: 81px;
+  height: 80px;
+  border-radius: 25px;
+  background: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $text;
+  font-size: 40px;
+  font-weight: 400;
+  box-shadow: 0px 8px 24px -4px rgba(24, 39, 75, 0.08), 0px 6px 12px -6px rgba(24, 39, 75, 0.12);
+}
+
+@media (max-width: 480px) {
+  .eventsIcon {
+    width: 60px;
+    height: 60px;
+    border-radius: 18px;
+  }
+}

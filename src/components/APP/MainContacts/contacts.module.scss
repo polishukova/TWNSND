@@ -1,0 +1,82 @@
+@import '../../../scss/vars';
+
+#mainContacts {
+    background-image: url('./background-contacts.png');
+    background-size: cover;
+    box-sizing: border-box;
+    margin: 0 -200px 80px -200px;
+    position: relative;
+    overflow: hidden;
+    @media (max-width: 1024px) {
+        margin: 0 -20px 50px -20px;
+    }
+    @media (max-width: 768px) {
+        margin: 0 -16px 50px -16px;
+    }
+    ul {
+        display: flex;
+        height: 100%;
+        animation: contacts 25s linear infinite;
+        @media (max-width: 768px) {
+            animation: contacts 15s linear infinite;
+        }
+        li {
+            white-space: nowrap;
+            flex-shrink: 0;
+            padding: 0 25px;
+            @media (max-width: 768px) {
+                padding: 0 20px;
+            }
+            @media (max-width: 768px) {
+                padding: 0 10px;
+            }
+            a {
+                display: block;
+                color: $white;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 120px;
+                display: flex;
+                @media (max-width: 768px) {
+                    line-height: 72px;
+                }
+                @media (max-width: 320px) {
+                    line-height: 48px;
+                    font-size: 16px;
+                }
+                &:hover {
+                    transform: scale(1.1);
+                    transition: all 0.5s;
+                }
+                svg {
+                    height: 42px;
+                    width: 42px;
+                    align-self: center;
+                    @media (max-width: 768px) {
+                        height: 32px;
+                        width: 32px;
+                    }
+                    @media (max-width: 320px) {
+                        height: 24px;
+                        width: 24px;
+                    }
+                }
+                span {
+                    padding-left: 15px;
+                    @media (max-width: 768px) {
+                        padding: 0 10px 0 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes contacts {
+    0% {
+        transform: translateZ(0%);
+    }
+    to {
+        transform: translate3d(-100%, 0, 0);
+    }
+}

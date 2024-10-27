@@ -1,0 +1,68 @@
+@import "../../scss/vars";
+
+.FAQPageWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 90px;
+
+    @media (max-width: 1024px) {
+        padding: 0 74px;
+    }
+
+    @media (max-width: 768px) {
+        padding: 0 48px;
+    }
+
+    @media (max-width: 480px) {
+        padding: 0;
+    }
+}
+
+.title {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 84px;
+    color: $title;
+}
+
+.text {
+    color: $title;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.accordionWrap {
+    margin-top: 78px;
+    margin-bottom: 150px;
+    width: 100%;
+}
+
+.formWrap {
+    max-width: 868px;
+}
+
+@media (max-width: 480px) {
+
+    .FAQPageWrap {
+        margin-top: 50px;
+    }
+
+    .title {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .text {
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 5px;
+    }
+
+    .accordionWrap {
+        margin-top: 65px;
+    }
+}

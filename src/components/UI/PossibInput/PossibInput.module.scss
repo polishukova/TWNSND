@@ -1,0 +1,27 @@
+@import "../../../scss/vars";
+
+.possib {
+    &__input {
+        width: calc(100% - 2px);
+        border: none;
+        outline: none;
+        border-radius: 15px;
+        background: none;
+        padding: 5px;
+        height: 33px;
+        font-size: 22px;
+        font-weight: 500;
+
+        @media (max-width:900px) {
+            font-size: 20px;
+        }
+
+        @media(max-width:525px) {
+            font-size: 14px;
+        }
+
+        /*         &:focus {
+            border: 1px solid $btn;
+        } */
+    }
+}

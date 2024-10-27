@@ -1,0 +1,408 @@
+@import '../../../../../scss/vars';
+
+.addSettings {
+  &__section {
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    color: $title;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+
+    @media (max-width: 525px) {
+      font-size: 14px;
+    }
+  }
+
+  &__possibility {
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+    min-height: 240px;
+    border-radius: 30px;
+    background: $backgr_light;
+    padding: 20px 25px;
+
+    @media (max-width: 800px) {
+      width: 100%;
+    }
+
+    @media (max-width: 525px) {
+      min-height: 200px;
+    }
+  }
+}
+
+.addSettingsPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  margin-top: 30px;
+  width: 100%;
+  background: $backgr_light;
+  padding: 10px 45px 30px;
+  border-radius: 50px;
+
+  @media (max-width: 1440px) {
+    padding: 3px 35px 30px;
+    border-radius: 30px;
+  }
+
+  @media (max-width: 1170px) {
+    padding: 10px 32px 30px;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 14px 30px 16px;
+  }
+
+  @media (max-width: 640px) {
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px 10px 30px;
+  }
+}
+
+.addSettingsWithIconsPanel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 100%;
+  background: $backgr_light;
+  padding: 20px 41px 40px 47px;
+  border-radius: 50px;
+
+  @media (max-width: 1440px) {
+    padding: 23px 17px 43px 10px;
+    border-radius: 30px;
+  }
+
+  @media (max-width: 1170px) {
+    padding: 23px 0px 10px;
+  }
+
+  @media (max-width: 1024px) {
+    background: none;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  @media (max-width: 1440px) {
+    padding: 23px 17px 43px 10px;
+    border-radius: 30px;
+  }
+
+  @media (max-width: 1170px) {
+    padding: 23px 0px 10px;
+  }
+
+  @media (max-width: 1023.5px) {
+    background: none;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  @media (max-width: 800px) {
+    width: 100%;
+    /* padding: 30px 35px; */
+  }
+
+  @media (max-width: 640px) {
+    width: 100%;
+    /* padding: 20px 25px; */
+  }
+}
+
+.addSettingsPanelItem {
+  position: relative;
+  width: calc(50% - 25px);
+  border: none;
+  border-radius: 30px;
+  padding: 20px;
+
+  & svg {
+    opacity: 0;
+  }
+
+  &:hover {
+    border: 1px solid $bright_border;
+
+    & svg {
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 1439.5px) {
+    width: calc(50% - 10px);
+  }
+
+  @media (max-width: 1024px) {
+    width: calc(50% - 10px);
+    background: $backgr_light;
+    padding: 30px;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
+  @media (max-width: 640px) {
+    padding: 24px;
+  }
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.addPossibilityItem {
+  position: relative;
+  border-radius: 30px;
+  padding: 40px 20px 20px;
+
+  & svg {
+    opacity: 0;
+  }
+
+  &:hover {
+    border: 1px solid $bright_border;
+
+    & svg {
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 640px) {
+    padding: 20px 5px;
+  }
+}
+
+.plussquareicon {
+  width: 85px;
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 34px;
+  background: $white;
+  border-radius: 25px;
+  filter: drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.04)) drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.12));
+
+  & svg {
+    width: 44px;
+    height: 44px;
+
+    @media (max-width: 525px) {
+      width: 26px;
+      height: 26px;
+    }
+  }
+
+  & svg path {
+    stroke: $black;
+    transition: all 0.5s;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media (max-width: 1440px) {
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: 1024px) {
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 525px) {
+    width: 60px;
+    height: 60px;
+    border-radius: 18px;
+  }
+}
+
+.addSettingsPanelName {
+  width: 100%;
+  height: fit-content;
+  color: $title;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26px;
+  margin-bottom: 13px;
+
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 22px;
+  }
+
+  @media (max-width: 525px) {
+    font-size: 14px;
+  }
+}
+
+.addSettingsPanelDesc {
+  width: 100%;
+  height: initial;
+  resize: none;
+  outline: none;
+  color: $grayDate;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+
+  @media (max-width: 1024px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 525px) {
+    font-size: 12px;
+  }
+}
+
+.modalTag {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background: $backgr_shadow;
+  z-index: 6;
+
+  &__content {
+    border-radius: 12px;
+    width: 1040px;
+    max-height: calc(100vh - 30px);
+    overflow-y: scroll;
+    background: $white;
+    padding: 30px 10px 100px;
+    margin: 0 15px;
+
+    @media (max-width: 1170px) {
+      max-width: 984px;
+    }
+
+    @media (max-width: 1024px) {
+      max-width: 984px;
+      padding: 30px 30px 100px;
+    }
+
+    @media (max-width: 768px) {
+      padding: 60px 15px 80px;
+    }
+  }
+}
+
+.modalTagClosed {
+  display: none;
+}
+
+.modalTitle {
+  font-size: 30px;
+  color: $admin_platform_title;
+  font-weight: 500;
+  margin-bottom: 30px;
+
+  @media (max-width: 525px) {
+    font-size: 16px;
+  }
+}
+
+.iconsWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 30px;
+  margin-bottom: 120px;
+
+  @media (max-width: 1170px) {
+    gap: 10px;
+  }
+
+  @media (max-width: 768px) {
+    gap: 15px;
+    margin-bottom: 80px;
+  }
+}
+
+.iconWrap {
+  width: 85px;
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $white;
+  border-radius: 25px;
+  filter: drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.04)) drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.12));
+
+  & svg {
+    width: 44px;
+    height: 44px;
+
+    @media (max-width: 525px) {
+      width: 26px;
+      height: 26px;
+    }
+  }
+
+  & svg path {
+    stroke: $black;
+    transition: all 0.5s;
+  }
+
+  &:hover {
+    border: 0.5px solid $bright_border;
+    cursor: pointer;
+  }
+
+  &:hover svg path {
+    stroke: $bright_border;
+  }
+
+  @media (max-width: 525px) {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.iconWrapChosen {
+  border: 1px solid $bright_border;
+}
+
+.btnsWrap {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+
+  @media (max-width: 650px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.btnWrap {
+  width: 180px;
+
+  @media (max-width: 650px) {
+    width: 100%;
+  }
+}

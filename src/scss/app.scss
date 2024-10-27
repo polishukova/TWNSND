@@ -1,0 +1,18 @@
+@import '_vars.scss';
+@import '_media.scss';
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Montserrat', Roboto, system-ui, Tahoma, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0 auto;
+}
+
+.open-menu {
+  overflow: hidden;
+}

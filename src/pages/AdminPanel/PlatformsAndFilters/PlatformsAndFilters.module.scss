@@ -1,0 +1,217 @@
+@import '../../../scss/vars';
+
+.headerControl {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.title {
+  color: $text;
+  font-family: 'Montserrat';
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.buttonsControl {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.buttonControl {
+  height: 100%;
+  padding: 0;
+  gap: 8px;
+  border: none;
+  font-size: 18px;
+  line-height: 111%;
+  color: $btn;
+
+  & svg {
+    margin: 0;
+  }
+}
+
+.createCard {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.createCardWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='20' ry='20' stroke='%23BFC1C8FF' stroke-width='1.5' stroke-dasharray='10%2c 9' stroke-dashoffset='25' stroke-linecap='square'/%3e%3c/svg%3e");
+  transition: all 0.5s;
+
+  &:hover {
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='20' ry='20' stroke='%230176D3FF' stroke-width='2' stroke-dasharray='10%2c 9' stroke-dashoffset='25' stroke-linecap='square'/%3e%3c/svg%3e");
+  }
+
+  &:active {
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='20' ry='20' stroke='%23BFC1C8FF' stroke-width='2' stroke-dasharray='10%2c 9' stroke-dashoffset='25' stroke-linecap='square'/%3e%3c/svg%3e");
+  }
+}
+
+.createCardBody {
+  border-radius: 10px;
+  background: $backgr_light;
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.createCardCircle {
+  width: 46px;
+  height: 46px;
+  background: $bright_border;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.createCardTitle {
+  margin-bottom: 60px;
+  margin-top: auto;
+  color: $text;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 186%;
+}
+
+.platformsCards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 291px));
+  grid-column-gap: 25px;
+  grid-row-gap: 30px;
+  padding-bottom: 30px;
+}
+
+.modalPullPublication {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.399);
+
+  &__body {
+    background: $white;
+  }
+}
+
+.btn {
+  max-width: 290px;
+  position: relative;
+  margin: 20px 0 20px;
+
+  @media (max-width: 1171px) {
+    max-width: 235px;
+    font-size: 16px;
+  }
+  @media (max-width: 1024px) {
+    max-width: 225px;
+  }
+  @media (max-width: 320px) {
+    max-width: 320px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1441px) {
+  .platformsCards {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 291px));
+  }
+}
+
+@media (max-width: 1170px) {
+  .createCardTitle {
+    margin-bottom: 49px;
+  }
+
+  .platformsCards {
+    grid-column-gap: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .createCardTitle {
+    margin-bottom: 47px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 940px) {
+  .platformsCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 850px) {
+  .buttonControl {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .buttonControl {
+    font-size: 18px;
+  }
+
+  .platformsCards {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-column-gap: 8px;
+  }
+
+  .createCard {
+    min-height: 390px;
+  }
+}
+
+@media (max-width: 600px) {
+  .buttonsControl {
+    gap: 5px;
+  }
+
+  .buttonControl {
+    gap: 4px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 523px) {
+  .platformsCards {
+    grid-row-gap: 24px;
+  }
+
+  .buttonsControl {
+    gap: 18px;
+  }
+
+  .buttonControl span {
+    display: none;
+  }
+}

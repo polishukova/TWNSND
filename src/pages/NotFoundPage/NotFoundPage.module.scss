@@ -1,0 +1,161 @@
+@import '../../scss/vars';
+
+.pageContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px 100px 140px 100px;
+}
+
+.logoMain {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logoNotFoundPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 112px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.namePage {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 38.4px;
+  text-align: center;
+}
+
+.titlePage {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 39.2px;
+  text-align: center;
+}
+
+.descriptionPage {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+}
+
+.link {
+  color: $active;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+@media (max-width: 1170px) {
+  .wrapper {
+    margin: 60px 60px 106px 60px;
+  }
+
+  .logoNotFoundPage {
+    margin-top: 74px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    margin: 60px 20px 133px 20px;
+  }
+
+  .logoNotFoundPage {
+    margin-top: 47px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    margin: 30px 20px 115px 20px;
+  }
+
+  .logoNotFoundPage {
+    margin-top: 93px;
+  }
+
+  .logoMain {
+    justify-content: center;
+  }
+
+  .logoNotFoundPage {
+    margin-bottom: 150px;
+  }
+
+  .descriptionPage {
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
+
+@media (max-width: 580px) {
+  .wrapper {
+    margin: 40px 16px 200px 16px;
+  }
+
+  .logoNotFoundPage {
+    margin-top: 50px;
+    margin-bottom: 80px;
+
+    svg {
+      max-width: 90%;
+    }
+  }
+
+  .description {
+    gap: 31px;
+  }
+
+  .link {
+    margin-top: 60px;
+  }
+
+  .titlePage {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .logoNotFoundPage {
+    margin-top: 50px;
+    margin-bottom: 70px;
+
+    svg {
+      max-width: 85%;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .logoNotFoundPage {
+    margin-bottom: 40px;
+
+    svg {
+      max-width: 224px;
+    }
+  }
+
+  .link {
+    margin-top: 33px;
+  }
+}

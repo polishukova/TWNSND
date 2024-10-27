@@ -1,0 +1,38 @@
+@import "../../../scss/vars";
+
+.statistics {
+    display: flex;
+    gap: 7px;
+}
+
+.statisticsBtn {
+    width: 100px;
+    border-radius: 9px;
+    border: none;
+    outline: none;
+    padding: 13px 0px;
+    background: $btn_disabled;
+    color: $gray_text;
+    font-size: 14px;
+    font-weight: 400;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+        box-shadow: 0px 6px 12px -6px #18274B1F;
+    }
+
+    @media(max-width:1169.5px) {
+        width: 87px;
+    }
+
+    @media(max-width:767.5px) {
+        width: 140px;
+    }
+}
+
+.statisticsBtnActive {
+    background: $white;
+    color: $active;
+    font-weight: 500;
+    box-shadow: 0px 6px 12px -6px #18274B1F;
+}

@@ -1,0 +1,215 @@
+@import '../../../scss/vars';
+
+.title {
+  margin-bottom: 60px;
+  text-align: center;
+  color: $btn;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.description {
+  margin-bottom: 50px;
+  color: $gray_text;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.innerInput {
+  display: flex;
+  gap: 9%;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.btn {
+  align-self: flex-end;
+  width: 288px;
+  padding-inline: 10px;
+  &:disabled {
+    width: 288px;
+    padding-inline: 10px;
+  }
+}
+
+.areaWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.error {
+  align-self: flex-start;
+  margin-left: 10px;
+  color: $error;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.commentArea {
+  width: 100% !important;
+  min-height: 210px;
+  padding: 10px 23px;
+  border: 0.6px solid #e6edf3;
+  box-shadow: 0px 6px 12px -6px rgba(24, 39, 75, 0.12);
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  resize: none;
+  outline: none;
+
+  &::placeholder {
+    color: $gray_text;
+  }
+
+  &:focus {
+    border: 0.6px solid $btn;
+  }
+}
+
+.errorCommentArea {
+  border: 0.6px solid $error;
+}
+
+.symbolCount {
+  margin-right: 22px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: $grayDate;
+}
+
+@media (max-width: 1170px) {
+  .title {
+    margin-bottom: 50px;
+    font-size: 34px;
+  }
+
+  .description {
+    margin-bottom: 60px;
+    font-size: 16px;
+  }
+
+  .innerInput {
+    gap: 3%;
+  }
+
+  .btn {
+    width: 246px;
+    font-size: 18px;
+    &:disabled {
+      width: 246px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .title {
+    margin-bottom: 60px;
+  }
+
+  .description {
+    margin-bottom: 50px;
+  }
+
+  .commentArea,
+  .symbolCount {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+
+  .description {
+    margin-bottom: 40px;
+  }
+
+  .innerInput {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn {
+    width: 233px;
+    font-size: 16px;
+    &:disabled {
+      width: 233px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    margin-bottom: 12px;
+    font-size: 18px;
+  }
+
+  .description {
+    margin-bottom: 16px;
+    font-size: 12px;
+  }
+
+  .form {
+    gap: 16px;
+  }
+
+  .innerInput {
+    gap: 16px;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 14px;
+    &:disabled {
+      width: 100%;
+    }
+  }
+
+  .commentArea,
+  .symbolCount {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .title {
+    margin-bottom: 0;
+    line-height: 20px;
+  }
+
+  .description {
+    margin-bottom: 0;
+  }
+
+  .form {
+    gap: 14px;
+  }
+
+  .innerInput {
+    gap: 14px;
+  }
+
+
+  .commentArea {
+    min-height: 120px;
+  }
+}

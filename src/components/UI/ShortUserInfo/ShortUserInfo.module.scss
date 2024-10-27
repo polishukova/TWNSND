@@ -1,0 +1,55 @@
+@import '../../../scss/vars';
+
+.header {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 7px;
+}
+
+.image {
+  height: 55px;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.userName {
+  height: 55px;
+  width: 55px;
+  background: $bright_border;
+  border-radius: 50%;
+  color: $light_gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.shortInfo {
+  font-size: 18px;
+  line-height: 26px;
+  color: $text;
+}
+
+.date {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: $grayDate;
+}
+
+@media (max-width: 480px) {
+  .userName {
+    font-size: 14px;
+  }
+  .shortInfo {
+    font-size: 14px;
+  }
+
+  .date {
+    font-size: 14px;
+  }
+}

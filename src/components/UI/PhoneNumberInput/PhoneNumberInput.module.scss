@@ -1,0 +1,87 @@
+@import "../../../scss/vars";
+
+.wrapper {
+    width: 100%;
+}
+
+.container {
+    font-family: "Montserrat", Roboto, system-ui, Tahoma, sans-serif;
+
+    .input {
+        font-size: 18px;
+        font-weight: 400;
+        width: 100%;
+        height: 55px;
+        border-radius: 10px;
+        border: 1px solid $btn;
+        box-shadow: 0px 6px 12px -6px rgba(24, 39, 75, 0.12);
+        padding: 14px 14px 14px 58px;
+        transition: none;
+
+        &:focus {
+            border: 1px solid;
+            border-color: $btn;
+            box-shadow: none;
+        }
+
+        &:hover:not(:focus) {
+            border-color: $btn;
+        }
+    }
+
+    .errorInput {
+        border: 1px solid $error;
+
+        &:hover:not(:focus) {
+            border-color: $error;
+        }
+    }
+
+    div:first-child {
+        color: $error;
+        font-size: 18px;
+    }
+
+    .dropdownContainer {
+        font-weight: 400;
+    }
+}
+
+.errorMessage {
+    color: $error;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 15px;
+    margin-bottom: 9px;
+}
+
+@media (max-width: 768px) {
+    .errorMessage {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .errorMessage {
+        font-size: 8px;
+        line-height: 10px;
+        margin-bottom: 7px;
+    }
+
+    .container {
+        .input {
+            padding-block: 3px;
+            font-size: 12px;
+            height: 40px;
+        }
+
+        div:first-child {
+            font-size: 12px;
+        }
+
+        .dropdownContainer {
+            width: 170px;
+            font-size: 12px;
+        }
+    }
+}

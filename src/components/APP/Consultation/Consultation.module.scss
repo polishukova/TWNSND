@@ -1,0 +1,97 @@
+@import '../../../scss/vars';
+
+.title {
+  margin-bottom: 60px;
+  text-align: center;
+  color: $btn;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.description {
+  margin-bottom: 60px;
+  color: $gray_text;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.btn {
+  margin-top: 20px;
+  align-self: flex-end;
+  width: 288px;
+  padding-inline: 10px;
+  &:disabled {
+    width: 288px;
+    padding-inline: 10px;
+  }
+}
+
+@media (max-width: 1170px) {
+  .title {
+    font-size: 34px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .btn {
+    width: 281px;
+    &:disabled {
+      width: 281px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
+
+  .description {
+    margin-bottom: 40px;
+  }
+
+  .btn {
+    margin-top: 0;
+    width: 233px;
+    font-size: 16px;
+    &:disabled {
+      width: 233px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    margin-bottom: 12px;
+    font-size: 18px;
+  }
+
+  .description {
+    margin-bottom: 24px;
+    font-size: 12px;
+  }
+
+  .form {
+    gap: 24px;
+  }
+
+  .btn {
+    margin-top: 8px;
+    width: 100%;
+    font-size: 14px;
+    &:disabled {
+      width: 100%;
+    }
+  }
+}

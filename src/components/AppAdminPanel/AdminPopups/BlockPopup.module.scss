@@ -1,0 +1,101 @@
+@import "../../../scss/vars";
+
+.wrapper {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(87, 93, 100, 0.07);
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.wrapperHide {
+    opacity: 0;
+}
+
+.popupWrap {
+    width: 350px;
+    position: absolute;
+    z-index: 3;
+    top: 39%;
+    left: 45%;
+    background-color: $white;
+    border-radius: 10px;
+    box-shadow: 0px 8px 24px -4px rgba(24, 39, 75, 0.2), 0px 6px 12px -6px rgba(24, 39, 75, 0.12);
+    transition: all 0.5s ease-in-out;
+
+    @media (max-width: 1170px) {
+        top: 36%
+    }
+
+    @media (max-width: 768px) {
+        left: 25%;
+        top: 42%;
+    }
+
+    @media (max-width: 480px) {
+        width: 255px;
+        position: fixed;
+        left: 10%;
+        top: 40%;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.text {
+    padding: 40px 13px 84px;
+    color: $title;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+
+    @media (max-width: 480px) {
+        padding: 20px 10px 48px;
+        font-size: 14px;
+    }
+}
+
+.buttons {
+    display: flex;
+}
+
+.button {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    border-top: 0.4px solid $light_border;
+    padding: 15px 0;
+
+    &:hover {
+        font-size: 14px;
+        font-weight: 400;
+        transition: all 0.5s;
+    }
+
+    &:active {
+        font-size: 14px;
+        transition: all 0.5s;
+    }
+
+    &:first-child {
+        color: $red;
+        border-right: 0.4px solid $light_border;
+    }
+
+    &:last-child {
+        color: $btn;
+    }
+}

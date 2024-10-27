@@ -1,0 +1,164 @@
+@import '../../../scss/vars';
+
+.bgModal {
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.399);
+  position: fixed;
+  transition: all 0.5s ease-in-out;
+  z-index: 99999;
+}
+
+.wrap {
+  width: 350px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.inner {
+  background-color: $white;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  text-align: center;
+  padding: 40px 13px 40px 13px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: $title;
+}
+
+.text {
+  margin-top: 28px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $light_border;
+}
+
+.innerBtn {
+  border-top: 0.4px solid #bfc1c8;
+  display: flex;
+  justify-content: space-around;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.btnExit {
+  width: 100%;
+  height: 44px;
+  color: #e21c1c;
+  border-bottom-left-radius: 10px;
+  transition: all 0.5s;
+  border-right: 0.4px solid #bfc1c8;
+  background-color: $white;
+
+  &:hover {
+    transition: all 0.5s;
+    background-color: #bfc1c8;
+  }
+}
+
+.btnCancel {
+  width: 100%;
+  height: 44px;
+  color: #094e91;
+  border-bottom-right-radius: 10px;
+  transition: all 0.5s;
+  background-color: $white;
+
+  &:hover {
+    transition: all 0.5s;
+    background-color: #bfc1c8;
+  }
+}
+
+.showModal {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 768px) {
+  .wrap {
+    transform: translate(50%, -50%);
+  }
+}
+
+@media (max-width: 720px) {
+  .wrap {
+    transform: translate(30%, -50%);
+  }
+}
+
+@media (max-width: 640px) {
+  .wrap {
+    transform: translate(10%, -50%);
+  }
+}
+
+@media (max-width: 580px) {
+  .wrap {
+    transform: translate(0%, -50%);
+  }
+}
+
+@media (max-width: 540px) {
+  .wrap {
+    width: 320px;
+    transform: translate(-10%, -50%);
+  }
+}
+
+@media (max-width: 480px) {
+  .wrap {
+    width: 305px;
+    transform: translate(-20%, -50%);
+  }
+  .inner {
+    padding: 30px 10px;
+  }
+  .title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 440px) {
+  .wrap {
+    width: 256px;
+    transform: translate(-30%, -50%);
+  }
+}
+
+@media (max-width: 380px) {
+  .wrap {
+    transform: translate(-40%, -50%);
+  }
+}
+
+@media (max-width: 350px) {
+  .wrap {
+    transform: translate(-45%, -50%);
+  }
+}
+
+@media (max-width: 330px) {
+  .wrap {
+    transform: translate(-50%, -50%);
+  }
+}

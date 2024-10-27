@@ -1,0 +1,127 @@
+@import "../../../scss/vars";
+
+.wrapper {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(34, 34, 34, .8);
+    transition: all .5s ease-in-out;
+    opacity: 1;
+}
+
+.wrapperHide {
+    opacity: 0;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    transition: all 0.7s;
+
+    @media (max-width: 768px) {
+        transform: translateX(-150%);
+    }
+
+    @media (max-width: 480px) {
+        transform: translateY(-150%);
+    }
+}
+
+.showMenu {
+    position: absolute;
+    z-index: 3;
+
+    @media (max-width: 768px) {
+        transform: translateX(0);
+        transition: all 0.7s;
+    }
+}
+
+.searchBarAndUserPanel {
+    margin-left: 246px;
+    background-color: $white;
+    display: flex;
+    width: calc(100% - 246px);
+    box-sizing: border-box;
+    padding: 65px 100px 58px 65px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    @media (max-width: 1170px) {
+        padding-right: 65px;
+    }
+
+    @media (max-width: 1024px) {
+        padding-right: 20px;
+    }
+
+    @media (max-width: 768px) {
+        margin-left: 0;
+        padding: 60px 16px;
+        width: 100%;
+    }
+
+    @media (max-width: 480px) {
+        padding: 14px 10px 96px 6px;
+        background-color: $title;
+        border-radius: 0px 0px 30px 30px;
+    }
+}
+
+.searchBarWrap {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 480px) {
+        position: absolute;
+        top: 86px;
+    }
+}
+
+.button {
+    width: 46px;
+    height: 46px;
+    border-radius: 100%;
+    flex-shrink: 0;
+    background-color: $title;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+    @media(max-width: 768px) {
+        display: flex;
+    }
+
+    @media(max-width: 480px) {
+        background-color: transparent;
+        filter: none;
+
+        &>svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+.logo {
+    display: none;
+    color: $text2;
+    font-family: Inter;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    line-height: 29px;
+
+    @media(max-width: 480px) {
+        display: block;
+    }
+}

@@ -1,0 +1,21 @@
+@import '../../scss/vars';
+.text {
+  color: $gray_text;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 480px) {
+  .text {
+    font-size: 17px;
+  }
+  .btn {
+    width: 100%;
+    padding: 10px 24px;
+    height: 40px;
+    font-size: 14px;
+  }
+}

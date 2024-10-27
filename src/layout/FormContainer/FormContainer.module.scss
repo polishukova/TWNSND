@@ -1,0 +1,61 @@
+@import '../../scss/vars';
+.wrap {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.inner {
+  flex-basis: 576px;
+  color: $text_basic;
+}
+
+.title {
+  color: $btn;
+  text-align: center;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  margin-bottom: 48px;
+}
+
+@media (max-width: 768px) {
+  .wrap {
+    padding-top: 100px;
+  }
+
+  .inner {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+@media (max-width: 580px) {
+  .wrap {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .inner {
+    border: none;
+    flex-basis: 100%;
+    padding: 0;
+  }
+
+  .title {
+    font-size: 23px;
+    line-height: 28px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 320px) {
+  .title {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+}

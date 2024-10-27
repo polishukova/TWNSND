@@ -1,0 +1,83 @@
+@import '../../../scss/vars';
+
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.399);
+  visibility: hidden;
+  transition: 0.3s all;
+  opacity: 0;
+}
+
+.wrapperBody {
+  background: $light_border;
+  width: 350px;
+  height: 208px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1px;
+  overflow: hidden;
+}
+.wrapperHeader {
+  flex: 0 0 164px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $white;
+}
+.wrapperTitle {
+  max-width: 175px;
+  color: $title;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+.wrapperFooter {
+  display: flex;
+  flex: 1 0 auto;
+  column-gap: 1px;
+  background: $light_border;
+}
+.wrapperOption {
+  flex: 1 0 50%;
+}
+.wrapperOption:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  button {
+    color: $red;
+    font-size: 12px;
+    font-weight: 500;
+    height: 100%;
+    background: $white;
+  }
+}
+.wrapperOption:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  button {
+    color: $btn;
+    font-size: 12px;
+    font-weight: 500;
+    background: $white;
+    height: 100%;
+  }
+}
+
+.isVisibility {
+  opacity: 1;
+  visibility: visible;
+}

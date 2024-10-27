@@ -1,0 +1,44 @@
+@import '../../../../scss/_vars';
+
+.container{
+    margin: 90px auto 0px;
+    .title{
+        display: block;
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 96%;
+        text-align: right;
+        color: $backgr_footer;
+        margin-bottom: 60px;
+    }
+    .tariffContainer{
+    display: flex;
+    gap: 20px;
+  }
+
+}
+
+.slide {
+  margin-right: 16px; 
+}
+
+
+
+@media (max-width: 769px) {
+  .container{
+    margin: 48px auto 0px; 
+  }
+  .slick-slide {
+    max-width: 640px; 
+  }
+}
+
+@media (max-width: 320px){
+  .container{
+    margin: 48px auto 0px; 
+  }
+  .slick-slide{
+    max-width: 270px;
+  }
+}

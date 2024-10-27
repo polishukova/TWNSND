@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #7dc1f9;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="_Разобранный" data-name="Разобранный">
+    <g id="Shape_08">
+      <rect class="cls-1" x="415" y="734" width="144" height="108" transform="translate(1275 301) rotate(90)"/>
+      <path class="cls-1" d="M541.41,861h-109.41v-145.41l36.59-36.59h109.41v145.41l-36.59,36.59ZM434,859h106.59l35.41-35.41v-142.59h-106.59l-35.41,35.41v142.59Z"/>
+    </g>
+    <g id="Shape_07">
+      <polygon class="cls-1" points="541 680 433 680 433 680 541 572 541 680"/>
+      <path class="cls-1" d="M541.41,681h-110.83l147.41-147.41v110.83l-36.59,36.59ZM435.41,679h105.17l35.41-35.41v-105.17l-140.59,140.59Z"/>
+    </g>
+    <g id="Shape_06">
+      <polygon class="cls-1" points="433 536 541 536 541 536 433 644 433 536"/>
+      <path class="cls-1" d="M432,646.41v-110.83l36.59-36.59h110.83l-147.41,147.41ZM434,536.41v105.17l140.59-140.59h-105.17l-35.41,35.41Z"/>
+    </g>
+    <g id="Shapae_05">
+      <path class="cls-1" d="M541.41,501h-109.41v-145.41l36.59-36.59h109.41v145.41l-36.59,36.59ZM434,499h106.59l35.41-35.41v-142.59h-106.59l-35.41,35.41v142.59Z"/>
+      <rect class="cls-1" x="415" y="374" width="144" height="108" transform="translate(915 -59) rotate(90)"/>
+    </g>
+    <g id="Shape_04">
+      <rect class="cls-1" x="779.51" y="159.5" width="57.98" height="2" transform="translate(123.31 618.71) rotate(-45)"/>
+      <polygon class="cls-1" points="541 284 649 176 793 176 793 284 541 284"/>
+      <path class="cls-1" d="M793.41,285h-254.83l146-146h145.41v109.41l-36.59,36.59ZM543.41,283h249.17l35.41-35.41v-106.59h-142.59l-142,142Z"/>
+    </g>
+    <g id="Shape_03">
+      <polygon class="cls-1" points="505 176 613 176 613 176 505 284 505 176"/>
+      <path class="cls-1" d="M504,286.41v-110.83l36.59-36.59h110.83l-147.41,147.41ZM506,176.41v105.17l140.59-140.59h-105.17l-35.41,35.41Z"/>
+    </g>
+    <g id="Shape_02">
+      <polygon class="cls-1" points="469 284 361 284 361 284 469 176 469 284"/>
+      <path class="cls-1" d="M469.41,285h-110.83l147.41-147.41v110.83l-36.59,36.59ZM363.41,283h105.17l35.41-35.41v-105.17l-140.59,140.59Z"/>
+    </g>
+    <g id="Shape_01">
+      <polygon class="cls-1" points="433 176 325 284 181 284 181 176 433 176"/>
+      <path class="cls-1" d="M325.41,285h-145.41v-109.41l36.59-36.59h254.83l-146,146ZM182,283h142.59l142-142h-249.17l-35.41,35.41v106.59Z"/>
+    </g>
+    <rect class="cls-1" x="528.11" y="699.25" width="57.28" height="2" transform="translate(-332.08 598.78) rotate(-45)"/>
+    <rect class="cls-1" x="528.11" y="339.25" width="57.28" height="2" transform="translate(-77.52 493.34) rotate(-45)"/>
+  </g>
+</svg>

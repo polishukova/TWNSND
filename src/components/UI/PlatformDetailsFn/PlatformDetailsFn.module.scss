@@ -1,0 +1,166 @@
+@import '../../../scss/vars';
+
+.wrap {
+  position: relative;
+  background-color: $white;
+  border: 0.5px solid #bfc1c8;
+  box-shadow: 0px 6px 12px -6px rgba(24, 39, 75, 0.12), 0px 8px 24px -4px rgba(24, 39, 75, 0.08);
+  border-radius: 30px;
+  padding: 24px 32px;
+  flex-basis: 600px;
+  height: 182px;
+  margin-bottom: 56px;
+  transition: all 0.5s;
+}
+
+.fnHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.btnText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 28px;
+  font-size: 14px;
+  line-height: 24px;
+  color: $title;
+  border: 1px solid $title;
+  border-radius: 15px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border-radius: 15px;
+  width: 46px;
+  height: 28px;
+}
+
+.list {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  width: fit-content;
+}
+
+.reviewsWrap {
+  width: 203px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.activ {
+  background-color: $btn_bg;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 6.2px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 27px;
+  position: absolute;
+  right: 32px;
+  bottom: 29px;
+}
+
+.arrowTab {
+  cursor: pointer;
+}
+
+@media (max-width: 716px) {
+  .wrap {
+    padding: 20px 28px;
+    width: 100%;
+  }
+
+  .btnText {
+    width: 120px;
+    height: 25px;
+    font-size: 12px;
+    line-height: 21px;
+  }
+  .btn {
+    width: 40px;
+    height: 25px;
+  }
+  .list {
+    font-size: 12px;
+    line-height: 21px;
+  }
+  .reviewsWrap {
+    width: 203px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .rating {
+    font-size: 22px;
+    line-height: 25px;
+    right: 25px;
+    bottom: 20px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 560px) {
+  .wrap {
+    padding: 18px 16px;
+    flex-basis: 160px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrap {
+    padding: 18px 16px;
+    flex-basis: 144px;
+  }
+  .fnHeader {
+    margin-bottom: 12px;
+  }
+  .btnText {
+    width: 120px;
+    height: 25px;
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .reviewsWrap {
+    width: 147px !important;
+    gap: 2px;
+    font-size: 10px !important;
+    line-height: 16px !important;
+  }
+  .btn {
+    width: 40px;
+    height: 25px;
+  }
+  .list {
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .reviewsWrap {
+    width: 203px;
+    font-size: 10px;
+    line-height: 21px;
+  }
+  .rating {
+    font-size: 14px;
+    line-height: 27px;
+    right: 25px;
+    bottom: 20px;
+    gap: 10px;
+  }
+}

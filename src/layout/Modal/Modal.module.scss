@@ -1,0 +1,105 @@
+@import '../../scss/vars';
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 100px 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(87, 87, 87, 0.5);
+  overflow-y: auto;
+  z-index: 9999;
+}
+
+.modal {
+  position: relative;
+  max-width: 1030px;
+  box-sizing: border-box;                           // max-height: 900px;
+  margin: auto;
+  padding: 140px 196px 80px;
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+}
+
+.buttonClose {
+  position: absolute;
+  top: 20px;
+  right: 36px;
+}
+
+@media (max-width: 1170px) {
+  .background {
+    padding-inline: 133px;
+  }
+
+  .modal {
+    padding: 100px 147px 80px;
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .background {
+    padding-inline: 62px;
+  }
+
+  .modal {
+    padding: 110px 182px 120px;
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .background {
+    padding-inline: 59px;
+  }
+
+  .modal {
+    padding: 50px 50px 60px 93px;
+    overflow-y: auto;
+  }
+
+  .buttonClose {
+    top: 10px;
+    right: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .background {
+    padding-inline: 16px;
+  }
+
+  .modal {
+    padding: 32px 16px;
+    gap: 20px;
+  }
+
+  .buttonClose {
+    top: 8px;
+    right: 16px;
+  }
+}
+
+@media (max-width: 320px) {
+  
+  .background {
+    padding: 160px 0;
+  }
+
+  .modal {
+    max-width: 288px;
+    max-height: 588px;
+    padding: 25px 16px;
+  }
+
+  .buttonClose {
+    top: 8px;
+    right: 16px;
+  }
+}

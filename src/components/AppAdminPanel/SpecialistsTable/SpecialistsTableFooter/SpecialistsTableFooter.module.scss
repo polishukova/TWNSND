@@ -1,0 +1,61 @@
+@import "../../../../scss/vars";
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 4px;
+}
+
+.numbers {
+    width: 24px;
+    height: 24px;
+    color: $text;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    transition: background 0.5s;
+
+    &_active {
+        background: $backgr_light_blue;
+        transition: all 0.5s;
+    }
+
+    &:hover:not(&_active):not(:active) {
+        border: 1px solid $light_border;
+    }
+
+    &:active {
+        background: $light_blue;
+        transition: all 0.5s;
+    }
+}
+
+.arrows {
+    padding: 0px;
+
+    div {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & > svg {
+            margin: 0px;
+            stroke: $title;
+            transition: all 0.5s;
+        }
+    }
+
+    &_disabled {
+        cursor: not-allowed;
+        div {
+            & > svg {
+                stroke: #d9d9d9;
+                transition: all 0.5s;
+            }
+        }
+    }
+}

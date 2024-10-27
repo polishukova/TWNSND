@@ -1,0 +1,164 @@
+.inner {
+  display: flex;
+  gap: 24px;
+}
+
+.filter {
+  width: 291px;
+}
+
+.filterBtn {
+  display: none;
+  align-items: center;
+
+  p {
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 500;
+    color:#094E91;
+  }
+
+  div {
+    display: flex;
+    padding: 0;
+  }
+}
+
+.filters {
+  display: block;
+}
+
+.platformWrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(291px, 1fr));
+  grid-gap: 25px;
+  width: 100%;
+  height: fit-content;
+}
+
+.platformWrapPopular {
+  margin-bottom: 56px;
+}
+
+.btn {
+  max-width: 242px;
+  position: relative;
+  left: 100%;
+  transform: translate(-100%, 0);
+  margin-top: 4px;
+}
+
+.label {
+  margin-bottom: 25px;
+}
+
+.loaderFullScreen {
+  width: 100%
+}
+
+.filterTitle {
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 20px;
+  color: #032d60;
+}
+
+.priceFilter {
+  display: flex;
+  gap: 5px;
+  border-radius: 10.87px;
+  background: #eff0f4;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+
+  span {
+    color: #9ea1aa;
+    text-align: center;
+    font-size: 12.682px;
+    font-weight: 400;
+    line-height: 12.682px;
+  }
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  width: 90.583px;
+  height: 36.233px;
+  background-color: #fff;
+  color: #9ea1aa;
+  text-align: center;
+  font-size: 12.682px;
+  font-weight: 400;
+  line-height: 27.175px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.price::-webkit-outer-spin-button,
+.price::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.deleteFilter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: #032d60;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+  height: 75px;
+}
+
+@media (max-width: 1171px) {
+  .templatedCard {
+    max-width: 252px;
+  }
+
+  .platformWrap {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .templatedCard {
+    max-width: 100%;
+  }
+
+  .filterBtn {
+    display: flex;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search {
+    position: relative;
+    z-index: 9999;
+    margin-top: 110px;
+  }
+
+  .btn {
+    max-width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 4px;
+  }
+
+  .filterBtn {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-top: 60px;
+    ;
+  }
+}

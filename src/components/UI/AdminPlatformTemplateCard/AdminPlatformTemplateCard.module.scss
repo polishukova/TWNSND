@@ -1,0 +1,154 @@
+@import '../../../scss/vars';
+
+.wrap {
+  position: relative;
+  border: 0.6px solid #bfc1c8;
+  border-radius: 20px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  text-align: start;
+
+  &:hover {
+    .templatedCardList__closeIcon {
+      fill: $gray_text;
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    .templatedCardList__closeIcon {
+      fill: $bright_border;
+      opacity: 1;
+    }
+  }
+}
+
+.templatedCardList__closeIcon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 15px;
+  height: 15px;
+  fill: $gray_text;
+  opacity: 0;
+}
+
+.innerImg {
+  height: 136px;
+  width: 100%;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  margin-bottom: 18px;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 17px 16px 16px;
+}
+
+.controlPanel {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.title {
+  flex-grow: 1;
+  color: $text;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 12px;
+}
+
+.desc {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 6.25px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: $text;
+}
+
+.btn {
+  font-size: 16px;
+  line-height: 30px;
+  padding: 8px 24px;
+  margin-bottom: 6px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__createModalDisabled {
+    background-color: $gray_border !important;
+    color: $white !important;
+  }
+}
+
+.templatedCardChosen {
+  border: 1px solid $bright_border;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+@media (max-width: 1081px) {
+  .title {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1015px) {
+  .desc {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 560px) {
+  .desc {
+    font-size: 10px;
+  }
+
+  .title {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 481px) {
+  .wrap {
+    width: 100%;
+  }
+
+  .desc {
+    font-size: 12px;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+}

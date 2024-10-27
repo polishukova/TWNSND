@@ -1,0 +1,64 @@
+@import "../../../scss/vars";
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+
+    @media(max-width:525px) {
+        width: 100%;
+    }
+}
+
+.wrapperEdit {
+    @media(max-width:640px) and (min-width:310px) {
+        margin-bottom: 7px;
+    }
+}
+
+.input {
+    border-radius: 15px;
+    border: 1px solid $gray_border;
+    font-size: 28px;
+    outline: none;
+    font-weight: 400;
+    line-height: 25px;
+    padding: 20px;
+    height: 55px;
+
+    &:focus {
+        border: 1px solid $btn;
+    }
+
+    &::placeholder {
+        color: $gray_text;
+    }
+
+    @media(max-width:768px) {
+        font-size: 24px;
+    }
+
+    @media(max-width:540px) {
+        font-size: 12px;
+    }
+}
+
+.inputEdit {
+    border: none;
+    height: initial;
+    padding: 0px 0px 0px 20px;
+    margin-bottom: 5px;
+    font-weight: 500;
+
+    &:focus {
+        border: none;
+    }
+
+    @media(max-width:640px) and (min-width:310px) {
+        font-size: 14px;
+        padding: 0px 0px 0px 5px;
+    }
+}

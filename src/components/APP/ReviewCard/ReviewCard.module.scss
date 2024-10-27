@@ -1,0 +1,122 @@
+@import '../../../scss/vars';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 25px;
+  border: 0.5px solid $light_border;
+  border-radius: 30px;
+}
+
+.wrapperEdit {
+  position: relative;
+
+  & svg {
+    width: 17px;
+    height: 17px;
+    transition: all 0.5s;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  &:hover {
+    transition: all 0.5s;
+    border: 0.6px solid $bright_border;
+
+    & svg {
+      opacity: 1;
+    }
+  }
+}
+
+.closeIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.reviewText {
+  height: 90px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: $text;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.moreReviewText {
+  text-align: start;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $btn;
+}
+
+.allReviewText {
+  background: $backgr_light;
+  border-radius: 12px;
+  padding: 28px 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: $text;
+}
+
+@media (max-width: 1170px) {
+  .reviewText {
+    font-size: 14px;
+  }
+
+  .moreReviewText {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    padding: 16px 25px;
+  }
+
+  .reviewText {
+    font-size: 12px;
+  }
+
+  .moreReviewText {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .reviewText {
+    height: 48px;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    width: 100%;
+    padding: 16px;
+    border-radius: 15px;
+  }
+
+  .reviewText {
+    height: 64px;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+  }
+
+  .allReviewText {
+    border-radius: 7px;
+    padding: 12px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

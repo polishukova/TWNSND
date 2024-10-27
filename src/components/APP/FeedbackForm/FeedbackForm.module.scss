@@ -1,0 +1,93 @@
+.feedbackForm {
+  width: 100%;
+  max-width: 658px;
+  box-sizing: border-box;
+  padding: 40px 40px 65px 40px;
+  box-shadow:
+    0px 8px 24px -4px rgba(24, 39, 75, 0.08),
+    0px 6px 12px -6px rgba(24, 39, 75, 0.06);
+  border-radius: 30px;
+}
+
+.formTitle {
+  font-size: 32px;
+  width: 100%;
+  font-weight: 500;
+  line-height: 45px;
+  margin-bottom: 25px;
+}
+
+.formText {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  width: 100%;
+}
+
+.inputsWrap {
+  margin-top: 40px;
+  margin-bottom: 105px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.btn {
+  font-size: 18px;
+  height: 55px;
+  padding: 0px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .formTitle {
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 23px;
+  }
+
+  .formText {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .feedbackForm {
+    max-width: 570px;
+    padding: 40px 40px 52px 40px;
+  }
+
+  .inputsWrap {
+    margin-top: 55px;
+    margin-bottom: 98px;
+    gap: 23px;
+  }
+}
+
+@media (max-width: 480px) {
+  .formTitle {
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 15px;
+  }
+
+  .formText {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .feedbackForm {
+    max-width: 288px;
+    padding: 40px 16px 76px 16px;
+  }
+
+  .inputsWrap {
+    margin-top: 35px;
+    margin-bottom: 68px;
+    gap: 22px;
+  }
+
+  .btn {
+    font-size: 14px;
+    height: 41px;
+  }
+}

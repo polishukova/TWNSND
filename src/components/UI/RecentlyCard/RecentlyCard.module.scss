@@ -1,0 +1,115 @@
+@import '../../../scss/vars';
+
+.wrap {
+  border: 0.6px solid #bfc1c8;
+  border-radius: 20px;
+  font-weight: 400;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 252px;
+  text-align: start;
+  transition: all 0.7s;
+  &:hover {
+    transition: all 0.7s;
+    transform: scale(0.9);
+    cursor: pointer;
+  }
+}
+
+.innerImg {
+  height: 126px;
+  width: 100%;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.title {
+  color: $text;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 7px;
+}
+
+.desc {
+  font-size: 12px;
+  line-height: 16px;
+  border-radius: 30px;
+  padding: 6px 10px;
+}
+
+.activated {
+  color: #4fa50b;
+  background-color: #e7fbd8;
+}
+
+.inProcessing {
+  color: #ff650f;
+  background-color: #ffeade;
+}
+
+.notPaid {
+  color: #094e91;
+  background-color: #d1e6fb;
+}
+
+@media (max-width: 1170px) {
+  .wrap {
+    width: 245px;
+  }
+}
+
+@media (max-width: 1081px) {
+  .wrap {
+    width: 231px;
+  }
+  .title {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1015px) {
+  .wrap {
+    width: 220px;
+  }
+}
+
+@media (max-width: 965px) {
+  .wrap {
+    width: 240px;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrap {
+    width: 252px;
+  }
+  .title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 560px) {
+  .wrap {
+    width: 220px;
+  }
+  .title {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 481px) {
+  .wrap {
+    width: 288px;
+  }
+  .title {
+    font-size: 14px;
+  }
+}

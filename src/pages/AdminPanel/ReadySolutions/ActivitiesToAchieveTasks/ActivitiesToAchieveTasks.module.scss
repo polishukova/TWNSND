@@ -1,0 +1,114 @@
+@import '../../../../scss/vars';
+
+.wrap {
+  display: flex;
+  margin-top: 40px;
+  flex-direction: column;
+  border-radius: 30px;
+  border: 0.5px solid $light_border;
+  padding: 44px 80px 40px;
+  box-shadow: 0px 8px 24px -4px rgba(24, 39, 75, 0.08), 0px 6px 12px -6px rgba(24, 39, 75, 0.12);
+
+  @media (max-width: 1390px) {
+    padding: 40px 40px 29px;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 40px 30px;
+  }
+
+  @media (max-width: 768px) {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+}
+
+.title {
+  color: $title;
+  font-size: 20px;
+  margin-bottom: 32px;
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
+}
+
+.activitiesListWrap {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(288px, 482px));
+  justify-content: space-between;
+  grid-gap: 18px;
+
+  @media (max-width: 1024px) {
+    gap: 10px;
+  }
+
+  @media (max-width: 850px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.subtitleWrap {
+  display: flex;
+  margin-bottom: 16px;
+  /* align-items: center; */
+  gap: 8px;
+  cursor: pointer;
+
+  @media(max-width:640px) {
+    padding: 0;
+    gap: 4px;
+  }
+
+  & svg {
+    width: 24px;
+    height: 24px;
+    fill: none;
+  }
+
+  @media(max-width:1024px) {
+    & svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media(max-width:640px) {
+    & svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  & svg path {
+    stroke: $title;
+    transition: all 0.5s;
+  }
+
+  & p {
+    color: $title;
+    transition: all 0.5s;
+  }
+
+  &:hover svg path {
+    stroke: $hover;
+  }
+
+  &:hover p {
+    color: $hover;
+  }
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 400;
+
+  &:active {
+    font-weight: 500;
+  }
+
+  @media (max-width:1023.5px) {
+    font-size: 14px;
+  }
+}

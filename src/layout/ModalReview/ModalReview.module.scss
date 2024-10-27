@@ -1,0 +1,56 @@
+@import '../../scss/vars';
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.399);
+}
+
+.modal {
+  position: relative;
+  z-index: 3;
+  width: 818px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px 25px 48px;
+  background-color: $white;
+  border-radius: 30px;
+}
+
+.buttonClose {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+@media (max-width: 930px) {
+  .background {
+    padding: 16px;
+  }
+
+  .modal {
+    width: 100%;
+    gap: 25px;
+    padding: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal {
+    gap: 20px;
+    padding: 16px 12px;
+  }
+
+  .buttonClose {
+    top: 12px;
+    right: 12px;
+  }
+}

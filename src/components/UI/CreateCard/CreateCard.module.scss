@@ -1,0 +1,99 @@
+@import '../../../scss/vars';
+
+.wrap {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  border-radius: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.borderRect {
+  stroke: rgba(191, 193, 200, 1);
+  fill: $white;
+  stroke-width: 0.6;
+  stroke-dasharray: 20;
+}
+
+.innerImg {
+  width: 100%;
+  height: 126px;
+  background-color: $backgr_light;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.title {
+  color: $text;
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 4px;
+}
+
+.desc {
+  font-size: 12px;
+  line-height: 18px;
+  color: $light_border;
+}
+
+.svg {
+  cursor: pointer;
+  transition: all 0.5s;
+  &:hover {
+    transition: all 0.5s;
+    transform: scale(1.2);
+  }
+}
+
+@media (max-width: 1081px) {
+  .title {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .desc {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 560px) {
+  .desc {
+    font-size: 10px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 481px) {
+  .title {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .desc {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}

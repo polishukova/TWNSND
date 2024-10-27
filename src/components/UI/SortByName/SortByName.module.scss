@@ -1,0 +1,49 @@
+@import '../../../scss/vars';
+
+.wrap {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+
+    @media(max-width:635px) {
+        margin-bottom: 0px;
+    }
+}
+
+.sortBtn {
+    display: flex;
+    gap: 5px;
+
+    & svg {
+        width: 24px;
+        height: 24px;
+
+        & path {
+            stroke: $btn;
+        }
+    }
+
+    @media(max-width:768px) {
+        margin-top: 5px;
+    }
+
+    @media(max-width:480px) {
+        margin-top: 60px;
+    }
+
+    & p {
+        font-weight: 500;
+        font-size: 18px;
+        color: $btn;
+    }
+
+    &:hover p {
+        color: $bright_border;
+        transition: all ease 0.3s;
+    }
+
+    &:hover svg path {
+        stroke: $bright_border;
+        transition: all ease 0.3s;
+    }
+}

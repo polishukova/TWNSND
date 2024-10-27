@@ -1,0 +1,28 @@
+@import '../../../scss/vars';
+
+.inputCheckbox {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
+.vueCheckbox {
+  width: 16px;
+  height: 16px;
+  border: 1px solid $light_border;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activ {
+  width: 8px;
+  height: 8px;
+  background-color: $title;
+  border-radius: 50%;
+}

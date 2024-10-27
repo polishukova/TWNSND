@@ -1,0 +1,149 @@
+@import '../../../scss/vars';
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px auto;
+
+    @media (max-width: 320px) {
+        display: block;
+    }
+}
+
+.cardWrapper {
+    max-width: 609px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 21px;
+}
+
+.card {
+    max-width: 292px;
+    margin-right: 25px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @media (max-width: 1171px) {
+        max-width: 251px;
+    }
+
+    @media (max-width: 1024px) {
+        max-width: 234px;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 240px;
+        margin-right: 0;
+
+        &:last-child {
+            display: none;
+        }
+    }
+
+    @media (max-width: 320px) {
+        min-width: 288px;
+        margin-bottom: 12px;
+    }
+}
+
+.readyMainSolutionsWrapper {
+    max-width: 610px;
+    border: 2px solid $total_black;
+    border-radius: 32px;
+    padding: 30px 32px;
+
+    @media (max-width: 1171px) {
+        max-width: 517px;
+    }
+
+    @media (max-width: 1024px) {
+        max-width: 484px;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 488px;
+    }
+
+    @media (max-width: 320px) {
+        max-width: 288px;
+        border-radius: 15px;
+        padding: 16px;
+    }
+}
+
+.readyMainSolutionsTitle {
+    font-size: 28px;
+    margin-bottom: 32px;
+
+    @media (max-width: 320px) {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+}
+
+.readyMainSolutionsDesc {
+    width: 100%;
+    margin-bottom: 49px;
+
+    p {
+        font-size: 16px;
+
+        @media (max-width: 1024px) {
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 320px) {
+        display: none;
+    }
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #01142c;
+    border-radius: 50px;
+    width: 304px;
+    cursor: pointer;
+    padding: 0;
+
+    p {
+      font-size: 20px;
+      margin-left: 10px;
+
+      @media (max-width: 320px) {
+        font-size: 16px;
+    }
+    }
+    &:hover {
+      color: $btn;
+    }
+
+    @media (max-width: 320px) {
+        width: 240px;
+    }
+}
+
+.buttonArrow {
+    border-left: 2px solid #01142c;
+    border-bottom: 2px solid #01142c;
+    border-top: 2px solid #01142c;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 320px) {
+        width: 45px;
+        height: 48px;
+
+        svg {
+            width: 47px;
+        }
+    }
+}

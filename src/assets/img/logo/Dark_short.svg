@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #094e91;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        fill: #094e91;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="_Не_разобранный" data-name="Не разобранный">
+    <g id="Shape_08">
+      <rect class="cls-2" x="415" y="734" width="144" height="108" transform="translate(1275 301) rotate(90)"/>
+      <polygon class="cls-1" points="577 680 577 824 541 860 433 860 433 716 469 680 577 680"/>
+    </g>
+    <g id="Shape_07">
+      <polygon class="cls-2" points="541 680 433 680 433 680 541 572 541 680"/>
+      <polygon class="cls-1" points="577 536 577 644 541 680 433 680 577 536"/>
+    </g>
+    <g id="Shape_06">
+      <polygon class="cls-2" points="433 536 541 536 541 536 433 644 433 536"/>
+      <polygon class="cls-1" points="577 500 433 644 433 536 469 500 577 500"/>
+    </g>
+    <g id="Shapae_05">
+      <polygon class="cls-1" points="577 320 577 464 541 500 433 500 433 356 469 320 577 320"/>
+      <rect class="cls-2" x="415" y="374" width="144" height="108" transform="translate(915 -59) rotate(90)"/>
+    </g>
+    <g id="Shape_04">
+      <path class="cls-1" d="M788,181l41-41-41,41Z"/>
+      <polygon class="cls-2" points="541 284 649 176 793 176 793 284 541 284"/>
+      <polygon class="cls-1" points="829 140 829 248 793 284 541 284 685 140 829 140"/>
+    </g>
+    <g id="Shape_03">
+      <polygon class="cls-2" points="505 176 613 176 613 176 505 284 505 176"/>
+      <polygon class="cls-1" points="649 140 505 284 505 176 541 140 649 140"/>
+    </g>
+    <g id="Shape_02">
+      <polygon class="cls-2" points="469 284 361 284 361 284 469 176 469 284"/>
+      <polygon class="cls-1" points="505 140 505 248 469 284 361 284 505 140"/>
+    </g>
+    <g id="Shape_01">
+      <polygon class="cls-2" points="433 176 325 284 181 284 181 176 433 176"/>
+      <polygon class="cls-1" points="469 140 325 284 181 284 181 176 217 140 469 140"/>
+    </g>
+    <line class="cls-1" x1="577" y1="680" x2="536.5" y2="720.5"/>
+    <line class="cls-1" x1="577" y1="320" x2="536.5" y2="360.5"/>
+  </g>
+</svg>

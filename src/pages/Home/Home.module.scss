@@ -1,0 +1,36 @@
+@import '../../scss/vars';
+
+.container {
+  padding: 0 100px 89px;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+@media (max-width: 1170px) {
+  .container {
+    padding: 0 60px 77px;
+  }
+}
+
+@media (max-width: 1220px) {
+  .container {
+    padding: 0 60px 118px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 20px 153px;
+  }
+}
+
+@media (max-width: 930px) {
+  .container {
+    padding: 0 16px 87px;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    padding: 0 16px 88px;
+  }
+}

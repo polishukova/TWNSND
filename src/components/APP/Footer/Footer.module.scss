@@ -1,0 +1,91 @@
+@import '../../../scss/vars';
+
+.wrapper {
+  width: 100%;
+  background-color: $backgr_footer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 48px 0;
+}
+
+.textList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+}
+
+.textDesc {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: $text_footer;
+}
+
+.containerIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 32px;
+  margin-bottom: 20px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+  }
+}
+
+@media (max-width: 768px) {
+  .textDesc {
+    max-width: 85%;
+  }
+}
+
+@media (max-width: 480px) {
+  .textDesc {
+    font-size: 18px;
+    line-height: 18px;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 400px) {
+  .textDesc {
+    font-size: 16px;
+    line-height: 18px;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 380px) {
+  .icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .textDesc {
+    font-size: 12px;
+    line-height: 16.8px;
+    padding: 0 10px;
+  }
+}

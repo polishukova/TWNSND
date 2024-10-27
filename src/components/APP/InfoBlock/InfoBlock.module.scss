@@ -1,0 +1,297 @@
+@import '../../../scss/vars';
+.infoBlock {
+  padding: 20px 0px;
+}
+.conteiner {
+  background-image: url('./Subtract.png');
+  background-size: contain;
+
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 640px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.ballWrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.ballAnimation {
+  position: absolute;
+  left: 203px;
+  top: 68px;
+  animation: bouncing 2s linear infinite;
+}
+@keyframes bouncing {
+  0% {
+    bottom: 100%;
+  }
+  50% {
+    bottom: 10px;
+    top: 20px;
+  }
+  100% {
+    bottom: 100%;
+  }
+}
+.ballShadowAnimation {
+  position: absolute;
+  left: 90px;
+  top: 195px;
+  animation: vanish 2s linear infinite;
+}
+@keyframes vanish {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.textConteinerRight {
+  background-image: url('./Frame\ 2166.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 39%;
+  height: 376px;
+  padding: 36px 42px;
+  p {
+    font-size: 20px;
+    font-weight: 200;
+  }
+}
+.textConteinerLeft {
+  background-image: url('./Frame\ 2175.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 56%;
+  padding: 36px 42px;
+  h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+}
+.button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #01142c;
+  border-radius: 34px;
+  width: 300px;
+  cursor: pointer;
+  p {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  &:hover {
+    color: $btn;
+  }
+}
+.buttonArrow {
+  border-left: 2px solid #01142c;
+  border-bottom: 2px solid #01142c;
+  border-top: 2px solid #01142c;
+  border-radius: 50%;
+  height: 65px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1171px) {
+  .conteiner {
+    height: 545px;
+  }
+  .ballWrapper {
+    margin-bottom: 45px;
+  }
+
+  .textConteinerRight {
+    width: 408px;
+    height: 317px;
+    padding: 32px 36px;
+    p {
+      font-size: 14px;
+    }
+  }
+  .textConteinerLeft {
+    width: 588px;
+
+    padding: 31px 32px;
+    h2 {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .conteiner {
+    height: 509px;
+  }
+  .ballWrapper {
+    margin-bottom: 42px;
+  }
+
+  .textConteinerRight {
+    width: 380px;
+    height: 297px;
+
+    p {
+      font-size: 14px;
+    }
+  }
+  .textConteinerLeft {
+    width: 547px;
+
+    padding: 24px 32px;
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .conteiner {
+    height: 380px;
+  }
+  .ballWrapper {
+    margin-bottom: 29px;
+  }
+  .ballAnimation {
+    width: 160px;
+    height: 160px;
+    left: 105px;
+    top: 35px;
+  }
+  .ballShadowAnimation {
+    width: 287px;
+    height: 130px;
+    left: 41px;
+    top: 115px;
+  }
+  .textConteinerRight {
+    width: 288px;
+    height: 226px;
+
+    p {
+      font-size: 12px;
+    }
+  }
+  .textConteinerLeft {
+    width: 413px;
+
+    padding: 23px 32px;
+
+    h2 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  }
+  .button {
+    width: 240px;
+    p {
+      font-size: 16px;
+    }
+  }
+  .buttonArrow {
+    width: 45px;
+    height: 48px;
+    svg {
+      width: 45px;
+      height: 48px;
+      margin: 0;
+    }
+  }
+}
+@media (max-width: 426px) {
+  .conteiner {
+    background-image: none;
+
+    width: 100%;
+    height: 485px;
+  }
+  .ball {
+    background-image: url('./Rectangle\ 676.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 330px;
+  }
+  .ballAnimation {
+    width: 160px;
+    height: 160px;
+    left: 30%;
+    top: 50px;
+  }
+  .ballShadowAnimation {
+    width: 287px;
+    height: 130px;
+    left: 12%;
+    top: 120px;
+  }
+  .textConteinerRight {
+    display: none;
+  }
+  .textConteinerLeft {
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 28px;
+
+    h2 {
+      font-size: 13px;
+      margin-bottom: 12px;
+    }
+  }
+  .buttonArrow {
+    width: 36px;
+    height: 36px;
+    svg {
+      width: 36px;
+      height: 36px;
+      margin: 0;
+    }
+  }
+}
+@media (max-width: 376px) {
+  .conteiner {
+    height: 440px;
+  }
+  .ball {
+    height: 288px;
+  }
+}
+@media (max-width: 321px) {
+  .conteiner {
+    height: 370px;
+  }
+  .ball {
+    height: 240px;
+  }
+  .ballAnimation {
+    width: 160px;
+    height: 160px;
+    left: 60px;
+    top: 50px;
+  }
+  .ballShadowAnimation {
+    width: 287px;
+    height: 130px;
+    left: 10px;
+    top: 120px;
+  }
+  .textConteinerLeft {
+    padding: 16px;
+  }
+}

@@ -1,0 +1,45 @@
+@import '../../../scss/vars';
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.link {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 0.6px solid $light_border;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $btn_bg;
+    border: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    gap: 20px;
+  }
+
+  .link {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    gap: 15px;
+  }
+
+  .link {
+    width: 36px;
+    height: 36px;
+  }
+}

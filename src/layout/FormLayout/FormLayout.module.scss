@@ -1,0 +1,297 @@
+@import '../../scss/vars';
+
+.wrapper {
+  position: relative;
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 36px;
+}
+
+.backHomeLink {
+  height: 50px;
+  margin-left: auto;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 137%;
+  color: $btn;
+
+  .backHomeArrow {
+    transform: rotateY(180deg);
+    margin-right: 10px;
+  }
+}
+
+.closeLink {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+
+  & svg {
+    height: 14px;
+    width: 14px;
+
+    & path {
+      fill: $light_gray_blue;
+    }
+  }
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.backgroundContainer {
+  max-width: 532px;
+  padding: 0 75px;
+  background-image: url('../../assets/img/formLayoutBackground.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.titleBackground {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 36px;
+  color: $white;
+}
+
+.info {
+  margin-block: 22px 42px;
+  text-align: center;
+  font-weight: 400;
+  color: $white;
+}
+
+.formWrapper {
+  width: 100%;
+  padding: 10px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formContainer {
+  position: relative;
+  max-width: 608px;
+  flex-grow: 1;
+  gap: 32px;
+}
+
+.logo {
+  max-width: 608px;
+  width: 100%;
+  display: flex;
+
+  .logoLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.description {
+  color: $gray_text;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.text {
+  display: none;
+}
+
+.title {
+  margin-bottom: 16px;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 36px;
+  color: $btn;
+}
+
+.toggleSignIn {
+  margin-left: auto;
+  margin-bottom: 50px;
+  margin-top: auto;
+  text-align: end;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 137%;
+  color: $btn;
+}
+
+@media (max-width: 1170px) {
+  .formContainer {
+    max-width: 517px;
+  }
+
+  .logo {
+    max-width: 517px;
+  }
+
+  .logoLink {
+    width: 145px;
+    height: 49px;
+  }
+
+  .backgroundContainer {
+    max-width: 473px;
+    padding: 0 53px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    grid-gap: 16px;
+  }
+
+  .arrowLink {
+    display: none;
+  }
+
+  .logo {
+    margin-top: 60px;
+  }
+
+  .logoLink {
+    width: 137px;
+    height: 46px;
+  }
+
+  .titleBackground {
+    font-size: 24px;
+  }
+
+  .info {
+    margin-block: 12px 40px;
+  }
+
+  .formContainer {
+    gap: 24px;
+  }
+
+  .title {
+    margin-bottom: 8px;
+    font-size: 24px;
+  }
+
+  .toggleSignIn {
+    font-size: 10px;
+    line-height: 150%;
+  }
+}
+
+@media (max-width: 768px) {
+  .formWrapper {
+    padding: 0 16px;
+  }
+
+  .logo {
+    max-width: 608px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 80px;
+    margin-top: 21px;
+  }
+
+  .formContainer {
+    max-width: 608px;
+  }
+
+  .backgroundContainer {
+    display: none;
+  }
+
+  .text {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 44px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 16px;
+    color: $gray_text;
+  }
+
+  .linkInner {
+    font-weight: 500;
+    color: $btn;
+    cursor: pointer;
+  }
+
+  .toggleSignIn {
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 54px;
+    font-size: 15px;
+    line-height: 100%;
+  }
+
+  .title {
+    margin-bottom: 20px;
+  }
+
+  .description {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    margin-top: 16px;
+  }
+
+  .logoLink {
+    width: 70px;
+    height: 24px;
+  }
+
+  .formContainer {
+    gap: 20px;
+  }
+
+  .text {
+    gap: 4px;
+    margin-bottom: 25px;
+    font-size: 12px;
+    line-height: 108%;
+  }
+
+  .toggleSignIn {
+    font-size: 10px;
+    line-height: 150%;
+  }
+
+  .title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .description {
+    display: none;
+  }
+}

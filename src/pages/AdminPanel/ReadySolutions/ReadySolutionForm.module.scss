@@ -1,0 +1,189 @@
+@import '../../../scss/vars';
+
+.template__form {
+  padding: 46px 80px 51px 60px;
+  border-radius: 30px;
+  box-shadow: 0px 8px 24px -4px rgba(24, 39, 75, 0.08), 0px 6px 12px -6px rgba(24, 39, 75, 0.12);
+  margin-bottom: 40px;
+
+  @media (max-width: 1170px) {
+    padding: 46px 48px 62px;
+  }
+
+  @media (max-width: 1023.5px) {
+    padding: 20px 30px 44px 40px;
+  }
+
+  @media (max-width: 540px) {
+    padding: 0px;
+    margin-bottom: 24px;
+    box-shadow: none;
+  }
+}
+
+.template__formEdit {
+  @media (max-width: 640px) and (min-width: 310px) {
+    box-shadow: 0px 8px 24px -4px rgba(24, 39, 75, 0.08), 0px 6px 12px -6px rgba(24, 39, 75, 0.12);
+    padding: 16px 16px 28px;
+    margin-bottom: 24px;
+  }
+}
+
+.template__formEdit {
+  @media (max-width: 640px) and (min-width: 310px) {
+    box-shadow: 0px 8px 24px -4px rgba(24, 39, 75, 0.08), 0px 6px 12px -6px rgba(24, 39, 75, 0.12);
+    padding: 16px 16px 28px;
+    margin-bottom: 24px;
+  }
+}
+
+.form {
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+
+    @media (max-width: 540px) {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  &__infoEdit {
+    @media (max-width: 640px) and (min-width: 310px) {
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: row;
+      gap: 11px;
+    }
+  }
+
+  &__text {
+    width: initial;
+    flex-grow: 1;
+    max-width: calc(100% - 235px);
+
+    @media (max-width: 1024px) {
+      max-width: calc(100% - 210px);
+      width: initial;
+      flex-grow: 1;
+    }
+
+    @media (max-width: 540px) {
+      max-width: 100%;
+      width: 100%;
+      order: 2;
+    }
+  }
+
+  &__textEdit {
+    @media (max-width: 640px) and (min-width: 310px) {
+      order: 1;
+      min-width: 168px;
+    }
+  }
+
+  &__imgWrap {
+    position: relative;
+    width: 210px;
+    height: 210px;
+    border: 1px solid $light_border;
+    border-radius: 15px;
+    overflow: hidden;
+
+    @media (max-width: 1170px) {
+      width: 210px;
+      height: 210px;
+    }
+
+    @media (max-width: 1024px) {
+      width: 185px;
+      height: 185px;
+      min-width: 185px;
+    }
+
+    @media (max-width: 540px) {
+      order: 1;
+      width: 288px;
+      height: 288px;
+    }
+  }
+
+  &__imgWrapEdit {
+    @media (max-width: 640px) {
+      margin-top: 30px;
+      order: 2;
+      width: 80px;
+      height: 80px;
+      min-width: 80px;
+    }
+  }
+
+  &__img {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  &__labelFile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 210px;
+    height: 210px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 1170px) {
+      width: 210px;
+      height: 210px;
+    }
+
+    @media (max-width: 1024px) {
+      width: 185px;
+      height: 185px;
+      min-width: 185px;
+    }
+
+    @media (max-width: 540px) {
+      width: 288px;
+      height: 288px;
+    }
+  }
+
+  &__labelFileEdit {
+    @media (max-width: 640px) and (min-width: 310px) {
+      width: 80px;
+      height: 80px;
+      min-width: 80px;
+    }
+  }
+
+  &__inputFile {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    opacity: 0;
+  }
+
+  &__sectionsWrap {
+    display: flex;
+    gap: 33px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    margin-left: 20px;
+
+    @media (max-width: 1440px) {
+      gap: 15px 20px;
+    }
+
+    @media (max-width: 640px) and (min-width: 310px) {
+      margin-left: 5px;
+      gap: 15px;
+    }
+  }
+}

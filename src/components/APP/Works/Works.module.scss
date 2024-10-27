@@ -1,0 +1,339 @@
+@import '../../../scss/vars';
+.works {
+  padding: 20px 0px;
+  h3 {
+    font-size: 40px;
+  }
+}
+.conteiner {
+  background-image: url('./Fon1.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: calc(100% + 200px);
+  height: 1860px;
+  margin-left: -100px;
+  padding: 106px 0px 0px 0px;
+}
+.player {
+  margin-left: 295px;
+  box-shadow: 5px 5px 20px 0px $shadow_gold;
+  margin-bottom: 80px;
+
+  width: 1044px;
+  height: 600px;
+  transform: skewY(-4.4deg);
+}
+.service {
+  padding: 0px 100px;
+  h3 {
+    color: $white;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+.wrapperService {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.serviceText:nth-child(odd) {
+  margin-left: 105px;
+}
+.serviceText {
+  border: 2px solid $white;
+  border-radius: 32px;
+  width: 505px;
+  padding: 24px 32px;
+  margin-bottom: 48px;
+  p {
+    color: $white;
+    font-size: 16px;
+  }
+}
+.wrapperServiceAnimations {
+  position: absolute;
+  width: 610px;
+  right: 0;
+  top: 0;
+}
+.ballAnimation {
+  width: 200px;
+  position: absolute;
+  left: 30%;
+  top: 220px;
+
+  animation: bouncing 2s linear infinite;
+}
+@keyframes bouncing {
+  0% {
+    bottom: 100%;
+  }
+  50% {
+    bottom: 10px;
+    top: 160px;
+  }
+  100% {
+    bottom: 100%;
+  }
+}
+@media (max-width: 1171px) {
+  .conteiner {
+    width: calc(100% + 120px);
+    height: 1530px;
+    margin-left: -60px;
+    padding: 85px 0px 0px 0px;
+  }
+  .player {
+    margin-left: 239px;
+    width: 849px;
+    height: 480px;
+    margin-bottom: 40px;
+  }
+  .service {
+    padding: 0px 60px;
+    h3 {
+      margin-bottom: 40px;
+    }
+  }
+  .serviceText {
+    margin-bottom: 30px;
+    padding: 24px 24px;
+  }
+  .serviceText:nth-child(odd) {
+    margin-left: 49px;
+  }
+  .wrapperServiceAnimations {
+    width: 510px;
+  }
+  .ballAnimation {
+    width: 160px;
+    left: 40%;
+    top: 180px;
+  }
+  @keyframes bouncing {
+    50% {
+      top: 120px;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .conteiner {
+    width: calc(100% + 40px);
+    height: 1350px;
+    margin-left: -20px;
+    padding: 75px 0px 0px 0px;
+  }
+  .player {
+    margin-left: 210px;
+    width: 742px;
+    height: 417px;
+  }
+  .service {
+    padding: 0px 20px;
+    h3 {
+      margin-bottom: 35px;
+    }
+  }
+  .serviceText {
+    margin-bottom: 40px;
+    padding: 20px 20px;
+    p {
+      font-size: 14px;
+    }
+  }
+  .wrapperServiceAnimations {
+    width: 480px;
+  }
+  .ballAnimation {
+    width: 150px;
+  }
+}
+
+@media (max-width: 769px) {
+  .works {
+    h3 {
+      font-size: 28px;
+    }
+  }
+  .conteiner {
+    width: calc(100% + 32px);
+    height: 995px;
+    margin-left: -16px;
+    padding: 56px 0px 0px 0px;
+  }
+  .player {
+    margin-left: 158px;
+    width: 554px;
+    height: 310px;
+    margin-bottom: 30px;
+  }
+  .service {
+    padding: 0px 16px;
+    h3 {
+      margin-bottom: 20px;
+    }
+  }
+  .serviceText:nth-child(odd) {
+    margin-left: 0px;
+  }
+  .serviceText:nth-child(even) {
+    width: 429px;
+  }
+  .serviceText {
+    padding: 16px;
+    width: 486px;
+    margin-bottom: 24px;
+    p {
+      font-size: 12px;
+    }
+  }
+  .wrapperServiceAnimations {
+    width: 295px;
+  }
+  .ballAnimation {
+    width: 100px;
+    top: 90px;
+  }
+  @keyframes bouncing {
+    50% {
+      top: 70px;
+    }
+  }
+}
+@media (max-width: 426px) {
+  .works {
+    padding: 16px 0px;
+    h3 {
+      font-size: 20px;
+    }
+  }
+  .conteiner {
+    background-image: url('./Fon2.png');
+    width: calc(100% + 32px);
+    height: 1360px;
+    margin-left: -16px;
+    padding: 80px 0px 0px 0px;
+  }
+  .player {
+    margin-left: 22px;
+    width: 356px;
+    height: 201px;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 10px 0px;
+  }
+  .wrapperService {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .serviceText:nth-child(even) {
+    width: 100%;
+  }
+  .serviceText {
+    padding: 16px;
+    width: 100%;
+    margin-bottom: 24px;
+    p {
+      font-size: 12px;
+    }
+  }
+  .wrapperServiceAnimations {
+    position: relative;
+    width: 100%;
+  }
+  .ballAnimation {
+    width: 100px;
+    top: 145px;
+  }
+  @keyframes bouncing {
+    50% {
+      top: 80px;
+    }
+  }
+}
+@media (max-width: 376px) {
+  .works {
+    padding: 16px 0px;
+    h3 {
+      font-size: 20px;
+    }
+  }
+  .conteiner {
+    width: calc(100% + 32px);
+    height: 1200px;
+    margin-left: -16px;
+    padding: 68px 0px 0px 0px;
+  }
+  .player {
+    margin-left: 20px;
+    width: 320px;
+    height: 180px;
+    margin-bottom: 20px;
+  }
+
+  .serviceText {
+    padding: 14px;
+    width: 100%;
+    margin-bottom: 20px;
+    p {
+      font-size: 12px;
+    }
+  }
+  .wrapperServiceAnimations {
+    position: relative;
+    width: 80%;
+  }
+  .ballAnimation {
+    width: 80px;
+    top: 100px;
+  }
+  @keyframes bouncing {
+    50% {
+      top: 60px;
+    }
+  }
+}
+@media (max-width: 321px) {
+  .works {
+    padding: 16px 0px;
+    h3 {
+      font-size: 20px;
+    }
+  }
+  .conteiner {
+    width: calc(100% + 32px);
+    height: 1025px;
+    margin-left: -16px;
+    padding: 58px 0px 0px 0px;
+  }
+  .player {
+    margin-left: 17px;
+    width: 288px;
+    height: 160px;
+  }
+
+  .serviceText {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    p {
+      font-size: 10px;
+    }
+  }
+  .wrapperServiceAnimations {
+    position: relative;
+    width: 80%;
+  }
+  .ballAnimation {
+    width: 70px;
+    top: 80px;
+    left: 40%;
+  }
+  @keyframes bouncing {
+    50% {
+      top: 55px;
+    }
+  }
+}

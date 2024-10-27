@@ -1,0 +1,164 @@
+.platformInner {
+  position: relative;
+  display: flex;
+  gap: 27px;
+}
+
+.hidden {
+  display: none;
+}
+
+.layout {
+  margin-bottom: 120px;
+  flex-basis: 926px;
+}
+
+.sort {
+  min-width: 289px;
+}
+
+.platformsCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(291px, 1fr));
+  grid-gap: 25px;
+}
+
+.platformWrap [btn] {
+  background-color: red;
+}
+
+.btn {
+  max-width: 242px;
+  position: relative;
+  left: 100%;
+  transform: translate(-100%, 0);
+  margin-top: 40px;
+}
+
+.loader {
+  height: 40vh;
+}
+
+.platformInnerNan {
+  margin-bottom: 180px;
+}
+
+.searchImg {
+  display: none;
+}
+
+.searchActiv {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchTitle {
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #032d60;
+  margin-top: 60px;
+  margin-bottom: 12px;
+}
+
+.searchText {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #bfc1c8;
+  width: 450px;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+@media (max-width: 1170px) {
+  .platformsCards {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-gap: 20px;
+  }
+
+  .sort {
+    min-width: 203px;
+  }
+}
+
+@media (max-width: 1169px) {
+  .sort {
+    min-width: 203px;
+  }
+
+  .layout {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .platformsCards {
+    grid-template-columns: repeat(auto-fill, minmax(234px, 1fr));
+    grid-gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .platformsCards {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-gap: 16px 8px;
+  }
+
+  .platformInner {
+    position: relative;
+    flex-direction: column;
+    gap: 27px;
+  }
+
+  .layout {
+    flex-basis: 380px;
+  }
+
+  .sort {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 480px) {
+  .platformsCards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px 0;
+  }
+
+  .btn {
+    max-width: 100%;
+    margin-top: 22px;
+  }
+
+  .layout {
+    flex-basis: 200px;
+  }
+
+  .search {
+    position: relative;
+    z-index: 9999;
+    margin-top: 82px;
+  }
+
+  .searchTitle {
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+  }
+
+  .platformInner {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,162 @@
+@import '../../../../scss/vars';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviewCard {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 817px;
+  border-radius: 30px;
+  background-color: $white;
+  padding: 48px 25px;
+  box-shadow: 0px 10px 32px -4px #18274b1a, 0px 6px 14px -6px #18274b1f;
+  margin-top: 27px;
+
+  &:hover {
+    transform: scale(1.02);
+    transition: all 0.5s;
+  }
+}
+
+.reviewHeader {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+.reviewInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.reviewName {
+  margin: 0;
+  color: $text;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.reviewDate {
+  margin: 0;
+  color: $grayDate;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.reviewContent {
+  text-align: start;
+  background-color: $backgr_light;
+  border-radius: 12px;
+  padding: 28px 20px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.reviewText {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.reviewButton {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .reviewCard {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .reviewCard {
+    max-width: 736px;
+  }
+}
+
+@media (max-width: 768px) {
+  .reviewCard {
+    position: static;
+    padding: 25px 25px;
+    margin-top: -8px;
+  }
+}
+
+@media (max-width: 720px) {
+  .reviewCard {
+    position: static;
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 580px) {
+  .reviewButton {
+    display: block;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    font-family: Montserrat;
+    padding: 0;
+    color: $active;
+  }
+
+  .collapsed {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+
+  .reviewName {
+    font-size: 14px;
+  }
+
+  .reviewDate {
+    font-size: 12px;
+  }
+
+  .reviewCard {
+    border-radius: 15px;
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .reviewContent {
+    background: none;
+    padding: 0;
+  }
+
+  .reviewText {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+}

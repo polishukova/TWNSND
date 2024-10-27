@@ -1,0 +1,103 @@
+@import '../../../../scss/vars';
+
+.footer {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  background: $light_white;
+  padding: 10px 20px 0;
+  border: 0.6px solid $admin_platform_title;
+  border-radius: 0 0 26px 26px;
+  position: relative;
+}
+
+.footerColumn {
+  width: 33.33%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  div, p {
+    cursor: pointer;
+  }
+}
+
+.footerIcon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & > svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.footerText {
+  color: $btn;
+  max-width: 80px;
+  min-height: 30px;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 5px;
+}
+
+.modalPullPublication {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.399);
+
+  &__body {
+    background: $white;
+  }
+}
+
+@media (max-width: 1170px) {
+  .footerIcon {
+    width: 20px;
+  }
+
+  .footerText {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    height: 50px;
+  }
+
+  .footerIcon {
+    width: 18px;
+  }
+}
+
+@media (max-width: 940px) {
+  .footer {
+    height: 60px;
+  }
+
+  .footerIcon {
+    width: 20px;
+  }
+}

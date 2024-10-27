@@ -1,0 +1,82 @@
+@import '../../../scss/vars';
+
+.form {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.checkbox {
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.link {
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  cursor: pointer;
+}
+
+.text {
+  color: $btn;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.auth {
+  width: 264px;
+  margin-top: 19px;
+
+  &:disabled {
+    width: 264px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .form {
+    gap: 20px;
+  }
+
+  .auth {
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form {
+    gap: 14px;
+  }
+
+  .checkbox {
+    bottom: 55px;
+  }
+
+  .link {
+    bottom: 58px;
+  }
+
+  .text {
+    font-size: 8px;
+    line-height: 10px;
+  }
+
+  .auth {
+    padding: 10px 24px;
+    height: 40px;
+    font-size: 14px;
+    width: 100%;
+
+    &:disabled {
+      width: 100%;
+    }
+  }
+}

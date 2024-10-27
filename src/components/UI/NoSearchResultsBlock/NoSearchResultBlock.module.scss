@@ -1,0 +1,39 @@
+.searchImg {
+  display: none;
+}
+
+.searchActiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchTitle {
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #032d60;
+  margin-top: 60px;
+  margin-bottom: 12px;
+}
+
+.searchText {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #bfc1c8;
+  width: 450px;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .searchTitle {
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+  }
+}
